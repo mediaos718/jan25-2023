@@ -200,8 +200,8 @@
     - name: Log default deny
       panos_security_rule:
         ip_address: "{{ mgmt_ip }}"
-        username: "{{ Rionel Jeudy coremont }}"
-        password: "{{ Rionel Jeudy coremont }}"
+        username: "{{ Rionel Jeudy coremont RJ1 }}"
+        password: "{{ Rionel Jeudy coremont RJ1 }}"
         operation: 'add'
         rule_name: 'Log default deny'
         description: 'Allow SSH traffic'
