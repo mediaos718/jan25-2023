@@ -195,3 +195,17 @@
         destination_zone: ['trust']
         action: 'deny'
         commit: "True"
+
+
+    - name: Log default deny
+      panos_security_rule:
+        ip_address: "{{ mgmt_ip }}"
+        username: "{{ Rionel }}"
+        password: "{{ Rionel }}"
+        operation: 'add'
+        rule_name: 'Log default deny'
+        description: 'Allow SSH traffic'
+        source_zone: ['untrust']
+        destination_zone: ['trust']
+        action: 'deny'
+        commit: "True"
